@@ -5,7 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
+import java.util.List;
 
 //jpa - java persistance api(jpa based repository)
 @Repository // To perform all the crud operations
@@ -32,5 +34,11 @@ public class PlayerRepository {
     {
         Player player = entityManager.find(Player.class,id);
         entityManager.remove(player);
+    }
+    //GetAllPlayer
+    public List<Player> getAllPlayers()
+    {
+        TypedQuery<Player> getAll = entityManager.createNamedQuery("get_all_players", Player.class);
+        return getAll.getResultList();
     }
 }

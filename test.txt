@@ -1,0 +1,55 @@
+--Creating a table
+--Create Table Table_Name
+
+
+schema.sql
+CREATE TABLE Player(
+    ID INTEGER NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Age INTEGER NOT NULL,
+    Nationality VARCHAR(30) NOT NULL,
+    Dob TIMESTAMP,
+    Designation INTEGER,
+    PRIMARY KEY(ID)
+);
+
+
+
+
+data.sql
+INSERT INTO Player VALUES(1,'JS',22,'INDIAN','2000-01-01',1);
+INSERT INTO Player VALUES(3,'JS',221,'INDIAN','2000-01-01',1);
+INSERT INTO Player VALUES(5,'JS3',121,'INDIAN','2000-01-01',1);
+
+
+
+
+
+
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+server.port=8060
+spring.datasource.username=test
+spring.datasource.password=test
+spring.h2.console.enabled=true
+spring.h2.console.settings.web-allow-others=true
+spring.jpa.show-sql=true
+
+
+
+
+
+
+
+
+
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=test
+spring.datasource.password=test
+spring.h2.console.enabled=true
+spring.h2.console.settings.web-allow-others=true
+spring.jpa.show-sql=true
+#mongodb+srv://pratham520:<>@cluster0.pe7oqtx.mongodb.net/?retryWrites=true&w=majority

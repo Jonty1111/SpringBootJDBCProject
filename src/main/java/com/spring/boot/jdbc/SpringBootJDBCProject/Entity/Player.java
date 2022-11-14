@@ -3,6 +3,8 @@ package com.spring.boot.jdbc.SpringBootJDBCProject.Entity;
 import javax.persistence.*;
 import java.util.Date;
 @Entity //(Rowmapping data mapping)
+//Which are used directly by name
+@NamedQuery(name="get_all_players", query = "SELECT p FROM Player p")
 @Table(name="Player")//gives the table name
 public class Player {
     @Id

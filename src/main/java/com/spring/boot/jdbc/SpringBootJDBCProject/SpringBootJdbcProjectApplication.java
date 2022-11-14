@@ -37,19 +37,39 @@ public class SpringBootJdbcProjectApplication implements CommandLineRunner {
 		//System.out.println(dao.deletePlayer(12));
 		System.out.println(dao.getAllPlayers());
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// Commenting for Tennis purpose only
 		//Create
 		repo.insertPlayer(new Player("JONTYlatest",19,"AUS",Date.valueOf("2001-01-01"),4));
 		repo.insertPlayer(new Player("JONTY1",20,"CANADA",Date.valueOf("2001-01-01"),4));
 		repo.insertPlayer(new Player("JONTY2",21,"IND",Date.valueOf("2001-01-01"),4));
 		//repo.updatePlayer(new Player(1,"JONTY2",21,"Pak",Date.valueOf("2001-01-01"),4));
 		//Read
-		System.out.println(repo.getPlayerById(2));
+		//System.out.println(repo.getPlayerById(2));
 
 		//Update
-		repo.updatePlayer(new Player(1,"JONTY2",21,"Pak",Date.valueOf("2001-01-01"),4));
+		//repo.updatePlayer(new Player(1,"JONTY2",21,"Pak",Date.valueOf("2001-01-01"),4));
 
 		//delete
-		repo.deleteById(1);
+		//repo.deleteById(1);
+		System.out.println("--------------------getAllPlayers--------------------");
+
+		System.out.println(repo.getAllPlayers());
+
+
+
 	}
 
 	//use command line runner where we use the terminal
