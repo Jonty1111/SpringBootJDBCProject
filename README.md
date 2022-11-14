@@ -1,3 +1,7 @@
+POSTMAN
+https://www.getpostman.com/collections/0696484664751e752246
+
+
 CLIENT -> BROWSER -> REQUEST -> http://localhost:8080/movies -> GET
 
 TOMCAT SERVER -> 127.0.01:8080 -> SpringBootJDBCApp -> Class -> @SpringBootApplication
